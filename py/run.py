@@ -43,6 +43,7 @@ class VideoFrameChange:
             self.ffmpeg_path,
             '-i', video,            # 输入文件
             '-filter:v', f'fps=fps={frame_rate}',  # 设置帧率的过滤器
+            '-y',
             output_path                   # 输出文件
         ]
 
