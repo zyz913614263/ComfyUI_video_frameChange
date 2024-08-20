@@ -16,7 +16,7 @@ class VideoFrameChange:
             "required": {
                 "video": ("STRING", {"default": "X://insert/path/here.mp4", "vhs_path_extensions": video_extensions}),
                 "frame_rate": (
-                    "FLOAT",
+                    "INT",
                     {"default": 8, "min": 1, "step": 1},
                 ),
             }
